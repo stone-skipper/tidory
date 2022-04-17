@@ -1,10 +1,9 @@
 -
   const guidebook = [
-    { text: "시작하기",  href: "https://tidory.com/docs/get-started" },
-    { text: "디렉토리",  href: "https://tidory.com/docs/directory" },
-    { text: "템플릿",  href: "https://tidory.com/docs/template" },
-    { text: "프레임워크",  href: "https://tidory.com/docs/framework" },
-    { text: "빌드 및 배포",  href:"https://tidory.com/docs/deployment" }
+    { text: "featured",  href: "https://tidory.com/docs/get-started" },
+    { text: "preheat",  href: "https://tidory.com/docs/directory" },
+    { text: "thoughts",  href: "https://tidory.com/docs/template" },
+    { text: "postscripts",  href: "https://tidory.com/docs/framework" },
   ];
 
 nav
@@ -14,18 +13,24 @@ nav
 
 style.
   header > nav {
-    margin-top: 35px;
+    margin-top: 45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
   header > nav ul {
-    list-style: none
+    list-style: none;
+    display: flex;
+    gap: 30px;
   }
   header > nav li {
-    margin: 0 15px;
     display: inline-block;
-  }
+    letter-spacing:1px;
+    text-transform: uppercase;
+   }
   header > nav a {
-    font-size: 1.05em;
-    font-weight: 300;
+    font-size: 0.9em;
+    font-weight: 400;
     text-decoration: none;
     color: var(--color-blur);
     transition-duration: 0.3s;

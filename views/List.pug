@@ -1,0 +1,37 @@
+s_cover_group
+  s_cover_rep
+    s_cover(name='featured')
+      .featured
+        s_cover_item
+          .featured-item
+            s_cover_item_thumbnail
+              img.image(src='[##_cover_item_thumbnail_##]')
+            strong.title [##_cover_item_title_##]
+            a.action(href='[##_cover_item_url_##]') &#xC790;&#xC138;&#xD788; &#xBCF4;&#xAE30;
+        button.btn-prev &lt;
+        button.btn-next &gt;
+    s_cover(name='list')
+      #mArticle.article_skin
+        s_cover_item
+          s_cover_item_article_info
+            .list_content
+              s_cover_item_thumbnail
+                a.thumbnail_post(href='[##_cover_item_url_##]')
+                  img(src='//i1.daumcdn.net/thumb/C148x148/?fname=[##_cover_item_thumbnail_##]')
+              a.link_post(href='[##_cover_item_url_##]')
+                strong.tit_post [##_cover_item_title_##]
+                p.txt_post [##_cover_item_summary_##]
+              .detail_info
+                a.link_cate(href='[##_cover_item_category_url_##]') [##_cover_item_category_##]
+                span.txt_bar
+                |                 [##_cover_item_date_##]
+          s_cover_item_not_article_info
+            .list_content
+              s_cover_item_thumbnail
+                a.thumbnail_post(href='[##_cover_item_url_##]')
+                  img(src='//i1.daumcdn.net/thumb/C148x148/?fname=[##_cover_item_thumbnail_##]')
+              a.link_post(href='[##_cover_item_url_##]')
+                strong.tit_post [##_cover_item_title_##]
+                p.txt_post [##_cover_item_summary_##]
+        s_cover_url
+          a.btn-more(href='[##_cover_url_##]') &#xB354;&#xBCF4;&#xAE30;

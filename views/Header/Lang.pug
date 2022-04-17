@@ -1,0 +1,27 @@
+.langOptions
+  .optionsWrapper
+    input#en(type='radio', name='en', value='en', checked)
+    label(for='en') EN
+    input#kr(type='radio', name='kr', value='kr')
+    label(for='kr') KR
+
+style.
+  .langOptions {
+    width:100%;
+    background:yellow;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+
+  }
+
+  .optionsWrapper{
+    width:fit-content;
+    background:red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    padding:20px;
+  }
+

@@ -4,12 +4,14 @@ block TIDORY
   s_t3
     #__tidory
       include views/Header
+      include views/List
 
   style.
     #__tidory {
-      height: 100vh;
-      align-items: center;
+      width: 100vw;
+      overflow-y: scroll;
       display: flex;
-      justify-content: center;
-      text-align: center;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
     }
