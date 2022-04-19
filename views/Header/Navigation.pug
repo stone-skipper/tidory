@@ -1,15 +1,21 @@
--
-  const guidebook = [
-    { text: "featured",  href: "https://tidory.com/docs/get-started" },
-    { text: "preheat",  href: "https://tidory.com/docs/directory" },
-    { text: "thoughts",  href: "https://tidory.com/docs/template" },
-    { text: "postscripts",  href: "https://tidory.com/docs/framework" },
-  ];
+//- -
+//-   const guidebook = [
+//-     { text: "featured",  href: "https://tidory.com/docs/get-started" },
+//-     { text: "preheat",  href: "https://tidory.com/docs/directory" },
+//-     { text: "thoughts",  href: "https://tidory.com/docs/template" },
+//-     { text: "postscripts",  href: "https://tidory.com/docs/framework" },
+//-   ];
 
-nav
-  ul
-    each guide in guidebook
-      li: a(href=guide.href)=guide.text
+//- nav
+//-   ul
+//-     each guide in guidebook
+//-       li: a(href=guide.href)=guide.text
+
+.category
+  h3 Category
+  |     [##_category_##]
+
+
 
 style.
   header > nav {
